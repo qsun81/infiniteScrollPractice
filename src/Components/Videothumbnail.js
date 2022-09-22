@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import ReactPlayer from 'react-player/lazy';
+
 import styled from 'styled-components';
 
 function Videothumbnail() {
@@ -15,12 +17,11 @@ function Videothumbnail() {
       {videos.map(({ id, url }) => {
         return (
           <div key={id}>
-            <iframe
-              width="300"
-              height="200"
-              src={url}
-              frameBorder="0"
-              title="Embedded youtube"
+            <ReactPlayer
+              width="300px"
+              height="200px"
+              url={url}
+              fallback="loading"
             />
           </div>
         );

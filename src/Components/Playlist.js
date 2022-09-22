@@ -23,6 +23,7 @@ function Playlist() {
         <p>- 미아</p>
         <p>- 블루밍</p>
       </div>
+
       <div>
         <div>바로 듣기</div>
         <IconWrapper>
@@ -40,6 +41,7 @@ export default Playlist;
 
 const PlaylistWrapper = styled.div`
   width: 400px;
+  margin: 0 auto;
   text-align: center;
   border: 1px solid black;
 `;
